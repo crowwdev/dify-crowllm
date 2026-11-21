@@ -1,0 +1,43 @@
+provider: crowllm
+label:
+  en_US: CrowLLM
+description:
+  en_US: OpenAI-compatible gateway that serves models from every major vendor through one key; model ids ending in ":free" cost nothing.
+icon_small:
+  en_US: icon.svg
+icon_large:
+  en_US: icon.svg
+background: "#1f2022"
+help:
+  title:
+    en_US: Get your API key from CrowLLM
+  url:
+    en_US: https://crowllm.com
+supported_model_types:
+  - llm
+configurate_methods:
+  - predefined-model
+  - customizable-model
+provider_credential_schema:
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        en_US: Enter your CrowLLM API key
+model_credential_schema:
+  model:
+    label:
+      en_US: Model Name
+    placeholder:
+      en_US: Enter a model ID from https://crowllm.com/docs
+  credential_form_schemas:
+    - variable: api_key
+      label:
+        en_US: API Key
+      type: secret-input
+      required: true
+      placeholder:
+        en_US: Enter your CrowLLM API key
