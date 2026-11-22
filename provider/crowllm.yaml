@@ -41,3 +41,8 @@ model_credential_schema:
       required: true
       placeholder:
         en_US: Enter your CrowLLM API key
+extra:
+  python:
+    provider_source: provider/crowllm.py
+    model_sources:
+      - models/llm/llm.py
